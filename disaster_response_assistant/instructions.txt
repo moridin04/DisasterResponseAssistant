@@ -1,0 +1,4 @@
+1. Ensure Python is installed
+2. Enter in terminal: "py -m pip install -r requirements.txt"
+3. Enter in terminal: "py app.py"
+4. Go to website: http://127.0.0.1:5000

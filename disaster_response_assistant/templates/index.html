@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <title>Disaster Response Assistant</title>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      background-color: #92832c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h2 {
+      background-color: #000000;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    form {
+      max-width: 400px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 2px 0;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #504a13;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    button:hover {
+      background-color: #6b6a0f;
+    }
+  </style>
+</head>
+<body>
+  <h1>Disaster Response Assistant</h1>
+  <h2>Select one or more NCR cities/places</h2>
+  <form method="post">
+    <label> <input type="checkbox" name="places" value="Caloocan">Caloocan</label>
+    <label> <input type="checkbox" name="places" value="Las Pinas">Las Pinas</label>
+    <label> <input type="checkbox" name="places" value="Makati">Makati</label>
+    <label> <input type="checkbox" name="places" value="Malabon">Malabon</label>
+    <label> <input type="checkbox" name="places" value="Mandaluyong">Mandaluyong</label>
+    <label> <input type="checkbox" name="places" value="Manila">Manila</label>
+    <label> <input type="checkbox" name="places" value="Marikina">Marikina</label>
+    <label> <input type="checkbox" name="places" value="Muntinlupa">Muntinlupa</label>
+    <label> <input type="checkbox" name="places" value="Navotas">Navotas</label>
+    <label> <input type="checkbox" name="places" value="Paranaque">Paranaque</label>
+    <label> <input type="checkbox" name="places" value="Pasay">Pasay</label>
+    <label> <input type="checkbox" name="places" value="Pasig">Pasig</label>
+    <label> <input type="checkbox" name="places" value="Pateros">Pateros</label>
+    <label> <input type="checkbox" name="places" value="Quezon City">Quezon City</label>
+    <label> <input type="checkbox" name="places" value="San Juan">San Juan</label>
+    <label> <input type="checkbox" name="places" value="Taguig">Taguig</label>
+    <label> <input type="checkbox" name="places" value="Valenzuela">Valenzuela</label>
+    <button type="submit">Analyze</button>
+  </form>
+</body>
+</html>

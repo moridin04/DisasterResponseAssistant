@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <title>Risk Analysis Result</title>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      background-color: #92832c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .card {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .table-container {
+      max-height: 300px;
+      overflow-y: auto;
+      margin-bottom: 20px;
+    }
+    .table-container table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .table-container th, .table-container td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin: 5px 10px 5px 0;
+    }
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
+    .button {
+      display: block;
+      width: 98%;
+      padding: 10px;
+      background-color: #504a13;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+      text-align: center;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #6b6a0f;
+    }
+    .button-row {
+      text-align: center;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Risk Analysis Result</h1>
+  {% if error %}
+    <div class="card">
+      <p>{{ error }}</p>
+      <a href="/" class="button">Back</a>
+    </div>
+  {% else %}
+    <div class="card">
+      <div class="table-container">
+        {{ table_html|safe }}
+      </div>
+
+      <div class="button-row">
+        <a href="/static/{{ excel_file }}" class="download-btn">Download Excel</a>
+        <a href="/static/{{ pdf_file }}" class="download-btn">Download PDF</a>
+      </div>
+
+      <a href="/" class="button">Back</a>
+    </div>
+  {% endif %}
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+NCR,Earthquake-Induced Landslide,Flood,Ground Shaking,Liquefaction,Rain-Induced Landslide,Storm Surge,Tsunami
+Caloocan,low,low,medium,low,low,low,high
+Las Pinas,low,low,medium,low,low,low,high
+Makati,low,low,high,medium,low,low,high
+Malabon,low,medium,medium,high,low,low,high
+Mandaluyong,low,low,medium,high,low,low,low
+Manila,low,medium,high,high,low,medium,high
+Marikina,medium,high,high,high,medium,low,low
+Muntinlupa,low,low,medium,low,medium,low,low
+Navotas,low,high,medium,medium,low,medium,high
+Paranaque,low,low,medium,low,low,low,high
+Pasay,low,medium,high,medium,low,low,high
+Pasig,medium,medium,high,high,low,low,low
+Pateros,medium,medium,high,high,low,low,low
+Quezon City,medium,medium,medium,low,high,low,low
+San Juan,low,high,medium,low,low,low,low
+Taguig,low,low,medium,low,low,low,low
+Valenzuela,low,medium,low,high,low,medium,high
